@@ -66,6 +66,10 @@
         <source>None</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -111,6 +115,10 @@
     <message>
         <source>Remove torrents</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add subcategory...</source>
+        <translation>Pīlikt zamkategoreju...</translation>
     </message>
 </context>
 <context>
@@ -568,10 +576,6 @@
         <translation>Atsasyuteišonas dreizuma atvaigs</translation>
     </message>
     <message>
-        <source>Connection status</source>
-        <translation>Škārsteikla salaiduma statuss</translation>
-    </message>
-    <message>
         <source>Alternative speed limits: On</source>
         <translation>Aļternativie dreizumi: Nui</translation>
     </message>
@@ -597,7 +601,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>Atsaukt</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -609,6 +613,14 @@
     </message>
     <message>
         <source>Would you like to pause all torrents?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Execution Log</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Log</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -783,10 +795,6 @@
         <translation>Lītuot:</translation>
     </message>
     <message>
-        <source>(None)</source>
-        <translation>(Nivīnu)</translation>
-    </message>
-    <message>
         <source>SOCKS4</source>
         <translation>SOCKS4</translation>
     </message>
@@ -809,10 +817,6 @@
     <message>
         <source>Use proxy for peer connections</source>
         <translation>Lītuot vidinīkserveri kūplītuotuoju salaidumim</translation>
-    </message>
-    <message>
-        <source>Use proxy only for torrents</source>
-        <translation>Lītuot vidinīkserveri tikai torrentim</translation>
     </message>
     <message>
         <source>Filter path (.dat, .p2p, .p2b):</source>
@@ -1161,10 +1165,6 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <source>When seeding time reaches</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Allow multiple connections from the same IP address:</source>
         <translation>Atļaut nazcik salaidumus nu vīnas IP adress:</translation>
     </message>
@@ -1209,10 +1209,6 @@
         <translation>libtorrent izdola</translation>
     </message>
     <message>
-        <source>Outgoing ports (Min) [0: Disabled]:</source>
-        <translation>Izīmūšie porti (Min) [0: Nūgrīzts]</translation>
-    </message>
-    <message>
         <source>Recheck torrents on completion:</source>
         <translation>Atkuortuotai puorsavērt torrentus piec atsasyuteišonas dabeigšonas:</translation>
     </message>
@@ -1231,10 +1227,6 @@
     <message>
         <source>Remove torrent</source>
         <translation>Nūjimt torrentu</translation>
-    </message>
-    <message>
-        <source>Outgoing ports (Max) [0: Disabled]:</source>
-        <translation>Izīmūšie porti (Max) [0: Nūgrīzts]:</translation>
     </message>
     <message>
         <source>Asynchronous I/O threads:</source>
@@ -1313,20 +1305,12 @@
         <translation>nūlīgt dativi uz:</translation>
     </message>
     <message>
-        <source>Stop tracker timeout:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Ban client after consecutive failures:</source>
         <translation type="unfinished" />
     </message>
     <message>
         <source>Enable cookie Secure flag (requires HTTPS)</source>
         <translation>Īgrīzt glabiņu Secure flag (vajadzeigs HTTPS)</translation>
-    </message>
-    <message>
-        <source>UPnP lease duration [0: Permanent lease]:</source>
-        <translation type="unfinished" />
     </message>
     <message>
         <source>Header: value pairs, one per line</source>
@@ -1343,14 +1327,6 @@
     <message>
         <source>Enable fetching RSS feeds</source>
         <translation>Īgrīzt RSS laseituoju</translation>
-    </message>
-    <message>
-        <source>Hashing threads (requires libtorrent &gt;= 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Coalesce reads &amp; writes (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
     </message>
     <message>
         <source>Peer turnover threshold percentage:</source>
@@ -1415,14 +1391,6 @@
     <message>
         <source>RSS Smart Episode Filter</source>
         <translation>RSS Gudrais epizozu fiļtrys</translation>
-    </message>
-    <message>
-        <source>Disk cache (requires libtorrent &lt; 2.0):</source>
-        <translation>Cītdiska vydatguods (vajadzeigs libtorrent &lt; 2.0):</translation>
-    </message>
-    <message>
-        <source>Disk cache expiry interval (requires libtorrent &lt; 2.0):</source>
-        <translation>Cītdiska vydatguoda dereiguma iņtervals (vajadzeigs libtorrent &lt; 2.0):</translation>
     </message>
     <message>
         <source>Validate HTTPS tracker certificate:</source>
@@ -1529,14 +1497,6 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <source>Disk IO type (libtorrent &gt;= 2.0; requires restart):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Write-through (requires libtorrent &gt;= 2.0.6)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>It controls the internal state update interval which in turn will affect UI updates</source>
         <translation type="unfinished" />
     </message>
@@ -1562,14 +1522,10 @@
     </message>
     <message>
         <source>Enable OS cache</source>
-        <translation type="unfinished" />
+        <translation>Lītuot sistemys vydatguodu</translation>
     </message>
     <message>
         <source>Refresh interval:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Physical memory (RAM) usage limit (applied if libtorrent &gt;= 2.0):</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -1629,10 +1585,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <source>Use proxy for hostname lookup</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Metadata received</source>
         <translation type="unfinished" />
     </message>
@@ -1646,6 +1598,154 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
+        <translation>Pīvadums: 172.17.32.0/24, fdff:ffff:c8::/40</translation>
+    </message>
+    <message>
+        <source>SQLite database (experimental)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Resume data storage type (requires restart):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Fastresume files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Backup the log file after:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>days</source>
+        <translation>dīnu</translation>
+    </message>
+    <message>
+        <source>Log file</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Behavior</source>
+        <translation>Izavedīņs</translation>
+    </message>
+    <message>
+        <source>Delete backup logs older than:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for BitTorrent purposes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>years</source>
+        <translation>godim</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation>Izglobuošonas vīta:</translation>
+    </message>
+    <message>
+        <source>months</source>
+        <translation>mienešīm</translation>
+    </message>
+    <message>
+        <source>Remember Multi-Rename settings</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for general purposes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for RSS purposes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk cache expiry interval (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit (applied if libtorrent &amp;gt;= 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk cache (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Socket send buffer size [0: system default]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Coalesce reads &amp;amp; writes (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Outgoing ports (Max) [0: disabled]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Socket receive buffer size [0: system default]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use Subcategories</source>
+        <translation>Lītuot zamkategorejas</translation>
+    </message>
+    <message>
+        <source>Disk IO type (libtorrent &amp;gt;= 2.0; requires restart):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Write-through (requires libtorrent &amp;gt;= 2.0.6)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Stop tracker timeout [0: disabled]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Outgoing ports (Min) [0: disabled]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Hashing threads (requires libtorrent &amp;gt;= 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>UPnP lease duration [0: permanent lease]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Bdecode token limit:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>When inactive seeding time reaches</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>.torrent file size limit:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Bdecode depth limit:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>(None)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Perform hostname lookup via proxy</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>When total seeding time reaches</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -1951,6 +2051,66 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Progress:</source>
         <translation>Progress</translation>
+    </message>
+    <message>
+        <source>Use regular expressions</source>
+        <translation>Lītuot Reguļaras izsaceibas</translation>
+    </message>
+    <message>
+        <source>Filename</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Filename + Extension</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enumerate Files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Rename failed: file or folder already exists</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Toggle Selection</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Replacement Input</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Replace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Replace All</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Include files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Include folders</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Search Files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Case sensitive</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Match all occurrences</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2417,7 +2577,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Total Size</source>
-        <translation type="unfinished" />
+        <translation>Kūpeigais lelums</translation>
     </message>
     <message>
         <source>Times Downloaded</source>
@@ -2425,6 +2585,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Add trackers...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Renamed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Original</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2532,6 +2700,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Trackers</source>
         <translation>Trakeri</translation>
+    </message>
+    <message>
+        <source>Collapse/expand</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2721,6 +2893,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Remove</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Rename Files...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Renaming</source>
+        <translation>Puorsaukšona</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -2746,7 +2926,15 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>minutes</source>
-        <translation>mynotu</translation>
+        <translation type="vanished">mynotu</translation>
+    </message>
+    <message>
+        <source>inactive minutes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>total minutes</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -3264,6 +3452,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>New name:</source>
         <translation>Jauna pasauka:</translation>
     </message>
+    <message>
+        <source>Renaming)</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>RSSWidget</name>
@@ -3608,6 +3800,10 @@ Formats: S01E01, 1x1, 2017.12.31 i 31.12.2017 (Datam škiramsimbola "." vītā v
         <source>Don't create subfolder</source>
         <translation>Naradeit zamapvuoci</translation>
     </message>
+    <message>
+        <source>Add Tags:</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -3640,6 +3836,141 @@ Formats: S01E01, 1x1, 2017.12.31 i 31.12.2017 (Datam škiramsimbola "." vītā v
     </message>
     <message>
         <source>Unread</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>ExecutionLogWidget</name>
+    <message>
+        <source>General</source>
+        <translation>Vyscaureigi</translation>
+    </message>
+    <message>
+        <source>Blocked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Nazynoms</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Vysys</translation>
+    </message>
+    <message>
+        <source>showing</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Puorspīst</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Izlaseit vysys</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Log Type</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Viereibu</translation>
+    </message>
+    <message>
+        <source>Information Messages</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Warning Messages</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Filter logs</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Blocked IPs</source>
+        <translation>Nūblokētās IP</translation>
+    </message>
+    <message>
+        <source>out of</source>
+        <translation>nu</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Statuss</translation>
+    </message>
+    <message>
+        <source>Timestamp</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Viestejums</translation>
+    </message>
+    <message>
+        <source>Log Levels:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reason</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>item</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>IP</source>
+        <translation>IP</translation>
+    </message>
+    <message>
+        <source>Banned</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Normal Messages</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Critical</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Critical Messages</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Normal</source>
+        <translation>Norma</translation>
+    </message>
+    <message>
+        <source>items</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Results</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Info</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
 </context>

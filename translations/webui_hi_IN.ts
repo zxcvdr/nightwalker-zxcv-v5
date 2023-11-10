@@ -52,19 +52,23 @@
     </message>
     <message>
         <source>Metadata received</source>
-        <translation type="unfinished" />
+        <translation>मेटाडाटा प्राप्त </translation>
     </message>
     <message>
         <source>Files checked</source>
-        <translation type="unfinished" />
+        <translation>फाइलों का जांचा हुआ</translation>
     </message>
     <message>
         <source>Stop condition:</source>
-        <translation type="unfinished" />
+        <translation>रोकने की स्थिति</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished" />
+        <translation>कोई नहीं</translation>
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation>कतार में सबसे ऊपर रखा</translation>
     </message>
 </context>
 <context>
@@ -110,7 +114,11 @@
     </message>
     <message>
         <source>Remove torrents</source>
-        <translation type="unfinished" />
+        <translation>टौरेंटो को हटायें</translation>
+    </message>
+    <message>
+        <source>Add subcategory...</source>
+        <translation>उपश्रेणी जोड़े…</translation>
     </message>
 </context>
 <context>
@@ -381,7 +389,7 @@
     </message>
     <message>
         <source>Original author</source>
-        <translation type="unfinished" />
+        <translation>मूल निर्माता</translation>
     </message>
     <message>
         <source>Are you sure you want to remove the selected torrents from the transfer list?</source>
@@ -568,10 +576,6 @@
         <translation>डाउनलोड गति का चित्र</translation>
     </message>
     <message>
-        <source>Connection status</source>
-        <translation>कनेक्शन स्थिति</translation>
-    </message>
-    <message>
         <source>Alternative speed limits: On</source>
         <translation>गति की वैकल्पिक सीमा: चालू</translation>
     </message>
@@ -593,15 +597,15 @@
     </message>
     <message>
         <source>Filters Sidebar</source>
-        <translation type="unfinished" />
+        <translation>छन्नी साइडबार</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>रद्द करें</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished" />
+        <translation>हटायें</translation>
     </message>
     <message>
         <source>Would you like to resume all torrents?</source>
@@ -609,6 +613,14 @@
     </message>
     <message>
         <source>Would you like to pause all torrents?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Execution Log</source>
+        <translation>निष्पादन वृतांत</translation>
+    </message>
+    <message>
+        <source>Log</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -783,10 +795,6 @@
         <translation>प्रकार:</translation>
     </message>
     <message>
-        <source>(None)</source>
-        <translation>(कोई नहीं)</translation>
-    </message>
-    <message>
         <source>SOCKS4</source>
         <translation>SOCKS4</translation>
     </message>
@@ -809,10 +817,6 @@
     <message>
         <source>Use proxy for peer connections</source>
         <translation>सहकर्मी कनेक्शनों के लिए प्रॉक्सी का उपयोग करें</translation>
-    </message>
-    <message>
-        <source>Use proxy only for torrents</source>
-        <translation>प्रॉक्सी का उपयोग केवल टाॅरेंटों के लिए करें</translation>
     </message>
     <message>
         <source>Filter path (.dat, .p2p, .p2b):</source>
@@ -1006,7 +1010,7 @@
     </message>
     <message>
         <source>KiB/s</source>
-        <translation>किलोबाइट्स/सेकंड्स</translation>
+        <translation>केबी/से०</translation>
     </message>
     <message>
         <source>Enable clickjacking protection</source>
@@ -1162,7 +1166,7 @@
     </message>
     <message>
         <source>When seeding time reaches</source>
-        <translation>जब स्रोत काल समाप्त हो जाए</translation>
+        <translation type="vanished">जब स्रोत काल समाप्त हो जाए</translation>
     </message>
     <message>
         <source>Allow multiple connections from the same IP address:</source>
@@ -1209,10 +1213,6 @@
         <translation>libtorrent खंड</translation>
     </message>
     <message>
-        <source>Outgoing ports (Min) [0: Disabled]:</source>
-        <translation>जावक पोर्ट (न्यूनतम) [0: निष्क्रिय]:</translation>
-    </message>
-    <message>
         <source>Recheck torrents on completion:</source>
         <translation>पूर्ण होने पर टाॅरेंट पुनः जाँचें:</translation>
     </message>
@@ -1233,16 +1233,12 @@
         <translation>टौरेंट को हटायें</translation>
     </message>
     <message>
-        <source>Outgoing ports (Max) [0: Disabled]:</source>
-        <translation>जावक पोर्ट (अधिकतम) [0: निष्क्रिय]:</translation>
-    </message>
-    <message>
         <source>Asynchronous I/O threads:</source>
         <translation type="unfinished" />
     </message>
     <message>
         <source>s</source>
-        <translation>सेकंड</translation>
+        <translation>से०</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1254,7 +1250,7 @@
     </message>
     <message>
         <source>Fixed slots</source>
-        <translation type="unfinished" />
+        <translation>निश्चित स्लॉट</translation>
     </message>
     <message>
         <source>Advanced</source>
@@ -1274,7 +1270,7 @@
     </message>
     <message>
         <source>KiB</source>
-        <translation>किलोबाइट्स</translation>
+        <translation>केबी</translation>
     </message>
     <message>
         <source>Round-robin</source>
@@ -1313,19 +1309,11 @@
         <translation>के लिए प्रतिबन्ध:</translation>
     </message>
     <message>
-        <source>Stop tracker timeout:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Ban client after consecutive failures:</source>
         <translation>एक के बाद एक इतनी विफलताओं के बाद क्लाइंट को बैन करें:</translation>
     </message>
     <message>
         <source>Enable cookie Secure flag (requires HTTPS)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>UPnP lease duration [0: Permanent lease]:</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -1343,14 +1331,6 @@
     <message>
         <source>Enable fetching RSS feeds</source>
         <translation>RSS स्रोतों को लाना सक्षम करें</translation>
-    </message>
-    <message>
-        <source>Hashing threads (requires libtorrent &gt;= 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Coalesce reads &amp; writes (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
     </message>
     <message>
         <source>Peer turnover threshold percentage:</source>
@@ -1415,14 +1395,6 @@
     <message>
         <source>RSS Smart Episode Filter</source>
         <translation>बुद्धिमान RSS एपिसोड फिल्टर</translation>
-    </message>
-    <message>
-        <source>Disk cache (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk cache expiry interval (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
     </message>
     <message>
         <source>Validate HTTPS tracker certificate:</source>
@@ -1518,7 +1490,7 @@
     </message>
     <message>
         <source>Default</source>
-        <translation type="unfinished" />
+        <translation>पूर्व निर्धारित</translation>
     </message>
     <message>
         <source>POSIX-compliant</source>
@@ -1526,14 +1498,6 @@
     </message>
     <message>
         <source>This option is less effective on Linux</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk IO type (libtorrent &gt;= 2.0; requires restart):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Write-through (requires libtorrent &gt;= 2.0.6)</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -1562,14 +1526,10 @@
     </message>
     <message>
         <source>Enable OS cache</source>
-        <translation type="unfinished" />
+        <translation>OS कैश चालू करें</translation>
     </message>
     <message>
         <source>Refresh interval:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Physical memory (RAM) usage limit (applied if libtorrent &gt;= 2.0):</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -1618,7 +1578,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Files checked</source>
-        <translation type="unfinished" />
+        <translation>फाइलों का जांचा हुआ</translation>
     </message>
     <message>
         <source>Enable port forwarding for embedded tracker:</source>
@@ -1629,23 +1589,167 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <source>Use proxy for hostname lookup</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Metadata received</source>
-        <translation type="unfinished" />
+        <translation>मेटाडाटा प्राप्त </translation>
     </message>
     <message>
         <source>Torrent stop condition:</source>
-        <translation type="unfinished" />
+        <translation>टाॅरेंट रोकने की स्थिति:</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished" />
+        <translation>कोई नहीं</translation>
     </message>
     <message>
         <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
+        <translation>उदहारण : 172.17.32.0/24, fdff:ffff:c8::/40</translation>
+    </message>
+    <message>
+        <source>SQLite database (experimental)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Resume data storage type (requires restart):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Fastresume files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Backup the log file after:</source>
+        <translation>के बाद लॉग फाइल का बैकअप लें :</translation>
+    </message>
+    <message>
+        <source>days</source>
+        <translation>दिन</translation>
+    </message>
+    <message>
+        <source>Log file</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Behavior</source>
+        <translation>व्यवहार</translation>
+    </message>
+    <message>
+        <source>Delete backup logs older than:</source>
+        <translation>इससे पुरानी बैकअप लॉग फाइलों को मिटा दें :</translation>
+    </message>
+    <message>
+        <source>Use proxy for BitTorrent purposes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>years</source>
+        <translation>वर्ष</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation>संचय पथ :</translation>
+    </message>
+    <message>
+        <source>months</source>
+        <translation>माह</translation>
+    </message>
+    <message>
+        <source>Remember Multi-Rename settings</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for general purposes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for RSS purposes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk cache expiry interval (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit (applied if libtorrent &amp;gt;= 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk cache (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Socket send buffer size [0: system default]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Coalesce reads &amp;amp; writes (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Outgoing ports (Max) [0: disabled]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Socket receive buffer size [0: system default]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use Subcategories</source>
+        <translation>उपश्रेणियाँ प्रयोग करें</translation>
+    </message>
+    <message>
+        <source>Disk IO type (libtorrent &amp;gt;= 2.0; requires restart):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation>कतार में सबसे ऊपर रखा</translation>
+    </message>
+    <message>
+        <source>Write-through (requires libtorrent &amp;gt;= 2.0.6)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Stop tracker timeout [0: disabled]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Outgoing ports (Min) [0: disabled]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Hashing threads (requires libtorrent &amp;gt;= 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>UPnP lease duration [0: permanent lease]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Bdecode token limit:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>When inactive seeding time reaches</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>.torrent file size limit:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Bdecode depth limit:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>(None)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Perform hostname lookup via proxy</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>When total seeding time reaches</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -1952,6 +2056,66 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Progress:</source>
         <translation>प्रगति:</translation>
     </message>
+    <message>
+        <source>Use regular expressions</source>
+        <translation>रेगुलर एक्सप्रेसन्स का प्रयोग करें</translation>
+    </message>
+    <message>
+        <source>Filename</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Filename + Extension</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enumerate Files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Rename failed: file or folder already exists</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Toggle Selection</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Replacement Input</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Replace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Replace All</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Include files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Include folders</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Search Files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Case sensitive</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Match all occurrences</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -1984,7 +2148,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <name>SpeedLimitDialog</name>
     <message>
         <source>KiB/s</source>
-        <translation>किलोबाइट्स/सेकंड्स</translation>
+        <translation>केबी/से०</translation>
     </message>
 </context>
 <context>
@@ -2162,11 +2326,11 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Checking (%1)</source>
-        <translation type="unfinished" />
+        <translation>जाँच रहे हैं (%1)</translation>
     </message>
     <message>
         <source>Checking (0)</source>
-        <translation type="unfinished" />
+        <translation>जाँच रहे हैं (0)</translation>
     </message>
 </context>
 <context>
@@ -2417,7 +2581,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Total Size</source>
-        <translation type="unfinished" />
+        <translation>कुल आकर</translation>
     </message>
     <message>
         <source>Times Downloaded</source>
@@ -2426,6 +2590,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Add trackers...</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Renamed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>मूल</translation>
     </message>
 </context>
 <context>
@@ -2532,6 +2704,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Trackers</source>
         <translation>ट्रैकर</translation>
+    </message>
+    <message>
+        <source>Collapse/expand</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2719,7 +2895,15 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Remove</source>
+        <translation>हटायें</translation>
+    </message>
+    <message>
+        <source>Rename Files...</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Renaming</source>
+        <translation>पुनः नामकरण</translation>
     </message>
 </context>
 <context>
@@ -2746,7 +2930,15 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>minutes</source>
-        <translation>मिनट</translation>
+        <translation type="vanished">मिनट</translation>
+    </message>
+    <message>
+        <source>inactive minutes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>total minutes</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2760,7 +2952,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Remove torrent(s)</source>
-        <translation type="unfinished" />
+        <translation>टौरेंट(ओं) को हटायें</translation>
     </message>
 </context>
 <context>
@@ -2788,37 +2980,37 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>KiB</source>
         <comment>kibibytes (1024 bytes)</comment>
-        <translation>किलोबाइट्स</translation>
+        <translation>केबी</translation>
     </message>
     <message>
         <source>MiB</source>
         <comment>mebibytes (1024 kibibytes)</comment>
-        <translation> मेगाबाइट्स</translation>
+        <translation>एमबी</translation>
     </message>
     <message>
         <source>GiB</source>
         <comment>gibibytes (1024 mibibytes)</comment>
-        <translation>गीगाबाइट्स</translation>
+        <translation>जीबी</translation>
     </message>
     <message>
         <source>TiB</source>
         <comment>tebibytes (1024 gibibytes)</comment>
-        <translation>टेराबाइट्स</translation>
+        <translation>टीबी</translation>
     </message>
     <message>
         <source>PiB</source>
         <comment>pebibytes (1024 tebibytes)</comment>
-        <translation>पेटाबाइट्स</translation>
+        <translation>पीबी</translation>
     </message>
     <message>
         <source>EiB</source>
         <comment>exbibytes (1024 pebibytes)</comment>
-        <translation>एक्साबाइट्स</translation>
+        <translation>ईबी</translation>
     </message>
     <message>
         <source>/s</source>
         <comment>per second</comment>
-        <translation>/सेकंड</translation>
+        <translation>/से०</translation>
     </message>
     <message>
         <source>%1h %2m</source>
@@ -2948,7 +3140,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Results</source>
-        <translation type="unfinished" />
+        <translation>परिणाम</translation>
     </message>
     <message>
         <source>showing</source>
@@ -3111,7 +3303,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Remove torrents</source>
-        <translation type="unfinished" />
+        <translation>टौरेंटो को हटायें</translation>
     </message>
 </context>
 <context>
@@ -3263,6 +3455,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>New name:</source>
         <translation>नया नाम:</translation>
+    </message>
+    <message>
+        <source>Renaming)</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -3440,7 +3636,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>An expression with an empty %1 clause (e.g. %2)</source>
-        <translation type="unfinished" />
+        <translation>रिक्त %1 वाक्यांश वाली एक अभिव्यंजना (उदाहरण - %2) </translation>
     </message>
     <message>
         <source>Example: </source>
@@ -3608,6 +3804,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Don't create subfolder</source>
         <translation>उपफोल्डर न बनायें</translation>
     </message>
+    <message>
+        <source>Add Tags:</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -3629,7 +3829,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     </message>
     <message>
         <source>Remove torrents</source>
-        <translation type="unfinished" />
+        <translation>टौरेंटो को हटायें</translation>
     </message>
 </context>
 <context>
@@ -3641,6 +3841,141 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Unread</source>
         <translation>अपठित</translation>
+    </message>
+</context>
+<context>
+    <name>ExecutionLogWidget</name>
+    <message>
+        <source>General</source>
+        <translation>सामान्य</translation>
+    </message>
+    <message>
+        <source>Blocked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>अज्ञात</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>सभी</translation>
+    </message>
+    <message>
+        <source>showing</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>प्रतिलिपि बनाए</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>सभी चुनें</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Log Type</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>साफ करें</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>चेतावनी</translation>
+    </message>
+    <message>
+        <source>Information Messages</source>
+        <translation>सूचना सन्देश</translation>
+    </message>
+    <message>
+        <source>Warning Messages</source>
+        <translation>चेतावनी सन्देश</translation>
+    </message>
+    <message>
+        <source>Filter logs</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Blocked IPs</source>
+        <translation>प्रतिबंधित आईपी</translation>
+    </message>
+    <message>
+        <source>out of</source>
+        <translation>में से</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>स्थिति</translation>
+    </message>
+    <message>
+        <source>Timestamp</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>संदेश</translation>
+    </message>
+    <message>
+        <source>Log Levels:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reason</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>item</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>IP</source>
+        <translation>आई पी</translation>
+    </message>
+    <message>
+        <source>Banned</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Normal Messages</source>
+        <translation>सामान्य सन्देश</translation>
+    </message>
+    <message>
+        <source>Critical</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Critical Messages</source>
+        <translation>जोखिम सन्देश</translation>
+    </message>
+    <message>
+        <source>Normal</source>
+        <translation>सामान्य</translation>
+    </message>
+    <message>
+        <source>items</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Results</source>
+        <translation>परिणाम</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Choose a log level...</source>
+        <translation type="unfinished" />
     </message>
 </context>
 </TS>

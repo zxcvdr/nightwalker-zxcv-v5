@@ -458,7 +458,7 @@ td.statusBarSeparator {
 }
 
 /* ICONS IN LEFT SIDEBAR/FILTERLIST
-----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------*/
 
 ul.filterList a {
   display: inline;
@@ -643,9 +643,9 @@ ul.filterList a {
   color: var(--color-LightGrey);
   padding-left: 5px;
 }
-*/
+
 /* REPLACE STANDARD ICONS WITH CUSTOM PNG VERSION
-----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------*/
 
 img[src="icons/inode-directory.svg"] {
   background: url("../icons/inode-directory.png");
@@ -762,7 +762,7 @@ img[src="icons/mail-folder-inbox.svg"] {
   background-origin: content-box;
   object-position: -999999px 999999px;
 }
-*/
+
 /* TOOLBAR ICONS
 ----------------------------------------------------------------------------------------------*/
 
