@@ -1220,6 +1220,22 @@ window.qBittorrent.DynamicTable = (function() {
             this.columns['ratio'].updateTd = function(td, row) {
                 const ratio = this.getRowValue(row);
                 const string = (ratio === -1) ? '∞' : window.qBittorrent.Misc.toFixedPointString(ratio, 2);
+                switch (true) {
+                    case (ratio < 0.5):
+                        td.set('class', 'ratioBad');
+                        break;
+                    case (ratio < 1.0):
+                        td.set('class', 'ratioAlmost');
+                        break;
+                    case (ratio < 5.0):
+                        td.set('class', 'ratioGood');
+                        break;
+                    case (ratio > 5.0):
+                        td.set('class', 'ratioBest');
+                        break;
+                    default:
+                        break;
+                }
                 td.set('text', string);
                 td.set('title', string);
             };
