@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="${LANG}">
+<html lang="${LANG}" class="dark">
 
 <head>
     <meta charset="UTF-8" />
     <title>Upload local torrent</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css" />
+    <link rel="stylesheet" href="css/nightwalker.css?v=${CACHEID}" type="text/css" />
     <link rel="stylesheet" href="css/Window.css?v=${CACHEID}" type="text/css" />
     <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
     <script src="scripts/download.js?v=${CACHEID}"></script>
 </head>
 
@@ -63,7 +66,7 @@
                         <label for="startTorrent">Start torrent</label>
                     </td>
                     <td>
-                        <input type="hidden" id="startTorrentHidden" name="paused" />
+                        <input type="hidden" id="startTorrentHidden" name="stopped" />
                         <input type="checkbox" id="startTorrent" />
                     </td>
                 </tr>
@@ -147,31 +150,31 @@
             </div>
         </fieldset>
     </form>
+    <div id="upload_spinner" class="mochaSpinner"></div>
+
     <script>
-        'use strict';
+        "use strict";
 
         let submitted = false;
 
-        $('uploadForm').addEventListener("submit", function() {
-            $('startTorrentHidden').value = $('startTorrent').checked ? 'false' : 'true';
+        $("uploadForm").addEventListener("submit", () => {
+            $("startTorrentHidden").value = $("startTorrent").checked ? "false" : "true";
 
-            $('dlLimitHidden').value = $('dlLimitText').value.toInt() * 1024;
-            $('upLimitHidden').value = $('upLimitText').value.toInt() * 1024;
+            $("dlLimitHidden").value = $("dlLimitText").value.toInt() * 1024;
+            $("upLimitHidden").value = $("upLimitText").value.toInt() * 1024;
 
-            $('upload_spinner').style.display = "block";
+            $("upload_spinner").style.display = "block";
             submitted = true;
         });
 
-        $('upload_frame').addEventListener("load", function() {
+        $("upload_frame").addEventListener("load", () => {
             if (submitted)
-                window.parent.closeWindows();
+                window.parent.qBittorrent.Client.closeWindows();
         });
 
-        if (Browser.platform === 'ios') {
-            $('fileselect').accept = ".torrent";
-        }
+        if ((Browser.platform === "ios") || ((Browser.platform === "mac") && (navigator.maxTouchPoints > 1)))
+            $("fileselect").accept = ".torrent";
     </script>
-    <div id="upload_spinner" class="mochaSpinner"></div>
 </body>
 
 </html>

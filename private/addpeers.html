@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="${LANG}">
+<html lang="${LANG}" class="dark">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,49 +7,51 @@
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css" />
     <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
     <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
     <script>
-        'use strict';
+        "use strict";
 
         new Keyboard({
-            defaultEventType: 'keydown',
+            defaultEventType: "keydown",
             events: {
-                'Escape': function(event) {
-                    window.parent.closeWindows();
+                "Escape": function(event) {
+                    window.parent.qBittorrent.Client.closeWindows();
                     event.preventDefault();
                 },
-                'Esc': function(event) {
-                    window.parent.closeWindows();
+                "Esc": function(event) {
+                    window.parent.qBittorrent.Client.closeWindows();
                     event.preventDefault();
                 }
             }
         }).activate();
 
-        window.addEvent('domready', function() {
-            const hash = new URI().getData('hash');
+        window.addEvent("domready", () => {
+            const hash = new URI().getData("hash");
             if (!hash)
                 return false;
 
-            $('peers').focus();
+            $("peers").focus();
 
-            $('addPeersOk').addEvent('click', function(e) {
+            $("addPeersOk").addEvent("click", (e) => {
                 new Event(e).stop();
 
-                const peers = $('peers').get('value').trim().split(/[\r\n]+/);
+                const peers = $("peers").get("value").trim().split(/[\r\n]+/);
                 if (peers.length === 0)
                     return;
 
                 new Request({
-                    url: 'api/v2/torrents/addPeers',
-                    method: 'post',
+                    url: "api/v2/torrents/addPeers",
+                    method: "post",
                     data: {
                         hashes: hash,
-                        peers: peers.join('|')
+                        peers: peers.join("|")
                     },
                     onFailure: function() {
                         alert("Unable to add peers. Please ensure you are adhering to the IP:port format.");
                     },
                     onSuccess: function() {
-                        window.parent.closeWindows();
+                        window.parent.qBittorrent.Client.closeWindows();
                     }
                 }).send();
             });
@@ -62,7 +64,7 @@
         <p>List of peers to add (one IP per line):</p>
         <textarea id="peers" rows="10" style="width: 100%;" placeholder="Format: IPv4:port / [IPv6]:port"></textarea>
         <div style="margin-top: 10px; text-align: center;">
-            <button type="button" onclick="parent.closeWindows();">Cancel</button>
+            <button type="button" onclick="parent.qBittorrent.Client.closeWindows();">Cancel</button>
             <button type="button" id="addPeersOk">Ok</button>
         </div>
     </div>

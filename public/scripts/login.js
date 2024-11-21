@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2019  Mike Tzou (Chocobo1)
+ * Copyright (C) 2019-2024  Mike Tzou (Chocobo1)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -26,42 +26,40 @@
  * exception statement from your version.
  */
 
-'use strict';
+"use strict";
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('username').focus();
-    document.getElementById('username').select();
-
-    document.getElementById('loginform').addEventListener('submit', function(e) {
-        e.preventDefault();
-    });
-});
-
-function submitLoginForm() {
-    const errorMsgElement = document.getElementById('error_msg');
+function submitLoginForm(event) {
+    event.preventDefault();
+    const errorMsgElement = document.getElementById("error_msg");
 
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'api/v2/auth/login', true);
-    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=UTF-8');
-    xhr.addEventListener('readystatechange', function() {
+    xhr.open("POST", "api/v2/auth/login", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+    xhr.addEventListener("readystatechange", () => {
         if (xhr.readyState === 4) { // DONE state
             if ((xhr.status === 200) && (xhr.responseText === "Ok."))
-                location.reload(true);
+                location.replace(location);
             else
-                errorMsgElement.textContent = 'Invalid Username or Password.';
+                errorMsgElement.textContent = "Invalid Username or Password.";
         }
     });
-    xhr.addEventListener('error', function() {
+    xhr.addEventListener("error", () => {
         errorMsgElement.textContent = (xhr.responseText !== "")
             ? xhr.responseText
-            : 'Unable to log in, qBittorrent is probably unreachable.';
+            : "Unable to log in, qBittorrent is probably unreachable.";
     });
 
-    const usernameElement = document.getElementById('username');
-    const passwordElement = document.getElementById('password');
+    const usernameElement = document.getElementById("username");
+    const passwordElement = document.getElementById("password");
     const queryString = "username=" + encodeURIComponent(usernameElement.value) + "&password=" + encodeURIComponent(passwordElement.value);
     xhr.send(queryString);
 
     // clear the field
-    passwordElement.value = '';
+    passwordElement.value = "";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.getElementById("loginform");
+    loginForm.setAttribute("method", "POST");
+    loginForm.addEventListener("submit", submitLoginForm);
+});

@@ -1,4 +1,5 @@
-**Hack to "fix" theme after qBittorrent WebUI stopped support for translation in v4.5. NOTE: Not optimised, just a splice of the current WebUI 4.6 (with translation strings removed) and the nightwalker styles**
+### Updated to support qBittorrent v5+
+**Hack to "fix" theme after qBittorrent WebUI stopped support for translation in v4.5. NOTE: Not optimised, just a splice of the current WebUI 5.0.2 (with translation strings removed) and the nightwalker styles**
 
 # A Dark but not black qBittorrent WebUI 
 **_A darker theme for qBittorrent WebUI_ (made with the help of the Walkerservers community)**
@@ -38,7 +39,7 @@ You can also change these settings via the config file. The relevant entries are
 4. `git reset --hard origin/main`
 
 ### Tested
-Based on the standard qBittorrent WebUI theme (4.6 release).
+Based on the standard qBittorrent WebUI theme (5.0.2 release).
 
 #### A note for those who used the [Theme Park][theme.park] nginx mod
 Modify your nginx config and remove the lines that introduced the external css, anything after `rewrite ^/qbittorrent/(.*) /$1 break; ` (non inclusive) is something that can be removed. Do not leave -modded, or any other files that are not necessary for nginx to function in the `/etc/nginx/apps/` directory. Reload nginx after making changes by doing `sudo service nginx configtest`, if it returns OK, then proceed and do `sudo service nginx reload`. 

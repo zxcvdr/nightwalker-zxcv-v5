@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="${LANG}">
+<html lang="${LANG}" class="dark">
 
 <head>
     <meta charset="UTF-8" />
     <title>Add Torrent Links</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css" />
+    <link rel="stylesheet" href="css/nightwalker.css?v=${CACHEID}" type="text/css" />
     <link rel="stylesheet" href="css/Window.css?v=${CACHEID}" type="text/css" />
     <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
     <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
     <script src="scripts/download.js?v=${CACHEID}"></script>
     <script src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
 </head>
@@ -75,7 +78,7 @@
                             <label for="startTorrent">Start torrent</label>
                         </td>
                         <td>
-                            <input type="hidden" id="startTorrentHidden" name="paused" />
+                            <input type="hidden" id="startTorrentHidden" name="stopped" />
                             <input type="checkbox" id="startTorrent" />
                         </td>
                     </tr>
@@ -160,37 +163,38 @@
             </fieldset>
         </div>
     </form>
-    <script>
-        'use strict';
+    <div id="download_spinner" class="mochaSpinner"></div>
 
-        const encodedUrls = new URI().getData('urls');
+    <script>
+        "use strict";
+
+        const encodedUrls = new URI().getData("urls");
         if (encodedUrls) {
-            const urls = encodedUrls.split('|').map(function(url) {
+            const urls = encodedUrls.split("|").map((url) => {
                 return decodeURIComponent(url);
             });
 
             if (urls.length)
-                $('urls').set('value', urls.join("\n"));
+                $("urls").set("value", urls.join("\n"));
         }
 
         let submitted = false;
 
-        $('downloadForm').addEventListener("submit", function() {
-            $('startTorrentHidden').value = $('startTorrent').checked ? 'false' : 'true';
+        $("downloadForm").addEventListener("submit", () => {
+            $("startTorrentHidden").value = $("startTorrent").checked ? "false" : "true";
 
-            $('dlLimitHidden').value = $('dlLimitText').value.toInt() * 1024;
-            $('upLimitHidden').value = $('upLimitText').value.toInt() * 1024;
+            $("dlLimitHidden").value = $("dlLimitText").value.toInt() * 1024;
+            $("upLimitHidden").value = $("upLimitText").value.toInt() * 1024;
 
-            $('download_spinner').style.display = "block";
+            $("download_spinner").style.display = "block";
             submitted = true;
         });
 
-        $('download_frame').addEventListener("load", function() {
+        $("download_frame").addEventListener("load", () => {
             if (submitted)
-                window.parent.closeWindows();
+                window.parent.qBittorrent.Client.closeWindows();
         });
     </script>
-    <div id="download_spinner" class="mochaSpinner"></div>
 </body>
 
 </html>

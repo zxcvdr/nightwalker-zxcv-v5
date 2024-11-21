@@ -323,7 +323,7 @@ h3 {
   filter: grayscale(90%) brightness(249%) !important;
 }
 
-/*Adjusts images in the footer and filter menu and torrents section (e.g. the downloading, seeding and paused icons) to be slightly brighter*/
+/*Adjusts images in the footer and filter menu and torrents section (e.g. the downloading, seeding and stopped icons) to be slightly brighter*/
 #filtersColumn img,
 #transferList_wrapper img,
 #desktopFooter img {
@@ -524,11 +524,11 @@ ul.filterList a {
   padding-left: 5px;
 }
 
-#resumed_filter > a img {
+#running_filter > a img {
   display: none;
 }
 
-#resumed_filter:before {
+#running_filter:before {
   font-family: "Font Awesome 5 Free";
   font-size: 14px;
   content: "\f04b";
@@ -539,11 +539,11 @@ ul.filterList a {
   padding-left: 5px;
 }
 
-#paused_filter > a img {
+#stopped_filter > a img {
   display: none;
 }
 
-#paused_filter:before {
+#stopped_filter:before {
   font-family: "Font Awesome 5 Free";
   font-size: 14px;
   content: "\f04c";
@@ -644,6 +644,11 @@ ul.filterList a {
   padding-left: 5px;
 }
 
+#checking_filter > a img, #moving_filter > a img {
+  padding: 0;
+  margin-right: 7px;
+}
+
 /* REPLACE STANDARD ICONS WITH CUSTOM PNG VERSION
 ----------------------------------------------------------------------------------------------*/
 
@@ -671,8 +676,8 @@ img[src="icons/network-server.svg"] {
   object-position: -999999px 999999px;
 }
 
-img[src="icons/paused.svg"] {
-  background: url("../icons/paused.png");
+img[src="icons/stopped.svg"] {
+  background: url("../icons/stopped.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -851,11 +856,11 @@ img[src="icons/mail-folder-inbox.svg"] {
   color: white;
 }
 
-#resumeButton > img.mochaToolButton {
+#startButton > img.mochaToolButton {
   display: none;
 }
 
-#resumeButton:before {
+#startButton:before {
   font-family: "Font Awesome 5 Free";
   font-size: 24px;
   content: "\f04b";
@@ -867,7 +872,7 @@ img[src="icons/mail-folder-inbox.svg"] {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#resumeButton:hover:before {
+#startButton:hover:before {
   font-family: "Font Awesome 5 Free";
   font-size: 24px;
   content: "\f04b";
@@ -879,11 +884,11 @@ img[src="icons/mail-folder-inbox.svg"] {
   color: white;
 }
 
-#pauseButton > img.mochaToolButton {
+#stopButton > img.mochaToolButton {
   display: none;
 }
 
-#pauseButton:before {
+#stopButton:before {
   font-family: "Font Awesome 5 Free";
   font-size: 24px;
   content: "\f04c";
@@ -895,7 +900,7 @@ img[src="icons/mail-folder-inbox.svg"] {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#pauseButton:hover:before {
+#stopButton:hover:before {
   font-family: "Font Awesome 5 Free";
   font-size: 24px;
   content: "\f04c";

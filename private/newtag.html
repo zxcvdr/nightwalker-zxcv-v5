@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="${LANG}">
+<html lang="${LANG}" class="dark">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,46 +7,48 @@
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css" />
     <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
     <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
     <script src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
     <script>
-        'use strict';
+        "use strict";
 
         new Keyboard({
-            defaultEventType: 'keydown',
+            defaultEventType: "keydown",
             events: {
-                'Enter': function(event) {
-                    $('tagNameButton').click();
+                "Enter": function(event) {
+                    $("tagNameButton").click();
                     event.preventDefault();
                 },
-                'Escape': function(event) {
-                    window.parent.closeWindows();
+                "Escape": function(event) {
+                    window.parent.qBittorrent.Client.closeWindows();
                     event.preventDefault();
                 },
-                'Esc': function(event) {
-                    window.parent.closeWindows();
+                "Esc": function(event) {
+                    window.parent.qBittorrent.Client.closeWindows();
                     event.preventDefault();
                 }
             }
         }).activate();
 
-        window.addEvent('domready', function() {
-            const uriAction = window.qBittorrent.Misc.safeTrim(new URI().getData('action'));
-            const uriHashes = window.qBittorrent.Misc.safeTrim(new URI().getData('hashes'));
+        window.addEvent("domready", () => {
+            const uriAction = window.qBittorrent.Misc.safeTrim(new URI().getData("action"));
+            const uriHashes = window.qBittorrent.Misc.safeTrim(new URI().getData("hashes"));
 
-            if (uriAction === 'create')
-                $('legendText').innerText = 'Tag:';
+            if (uriAction === "create")
+                $("legendText").innerText = "Tag:";
 
-            $('tagName').focus();
+            $("tagName").focus();
 
-            $('tagNameButton').addEvent('click', function(e) {
+            $("tagNameButton").addEvent("click", (e) => {
                 new Event(e).stop();
 
-                const tagName = $('tagName').value.trim();
+                const tagName = $("tagName").value.trim();
 
                 const verifyTagName = function(name) {
                     if ((name === null) || (name === ""))
                         return false;
-                    if (name.indexOf(",") >= 0) {
+                    if (name.includes(",")) {
                         alert("Invalid tag name");
                         return false;
                     }
@@ -59,14 +61,14 @@
                             return;
 
                         new Request({
-                            url: 'api/v2/torrents/addTags',
-                            method: 'post',
+                            url: "api/v2/torrents/addTags",
+                            method: "post",
                             data: {
                                 hashes: uriHashes,
                                 tags: tagName,
                             },
                             onComplete: function() {
-                                window.parent.closeWindows();
+                                window.parent.qBittorrent.Client.closeWindows();
                             }
                         }).send();
                         break;
@@ -76,13 +78,13 @@
                             return;
 
                         new Request({
-                            url: 'api/v2/torrents/createTags',
-                            method: 'post',
+                            url: "api/v2/torrents/createTags",
+                            method: "post",
                             data: {
                                 tags: tagName,
                             },
                             onComplete: function() {
-                                window.parent.closeWindows();
+                                window.parent.qBittorrent.Client.closeWindows();
                             }
                         }).send();
                         break;
