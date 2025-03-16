@@ -3,7 +3,7 @@
 - Made Hover and Selected Items in the Table and Sidebar Blue
 - Removed Custom Sidebar Icons to help make entire line clickable instead of only the text
 
-### Updated to support qBittorrent v5+
+# Updated to support qBittorrent v5+
 **Hack to "fix" theme after qBittorrent WebUI stopped support for translation in v4.5. NOTE: Not optimised, just a splice of the current WebUI 5.0.2 (with translation strings removed) and the nightwalker styles**
 
 # A Dark but not black qBittorrent WebUI 
