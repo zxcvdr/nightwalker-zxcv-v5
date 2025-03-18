@@ -2,6 +2,7 @@
 - Made Clickable Links Yellow
 - Made Hover and Selected Items in the Table and Sidebar Blue
 - Removed Custom Sidebar Icons to help make entire line clickable instead of only the text
+- Changed Stalled Uploading and Downloading from Light Green and Blue to Gray for easier distinction at a quick glance
 
 # Updated to support qBittorrent v5+
 **Hack to "fix" theme after qBittorrent WebUI stopped support for translation in v4.5. NOTE: Not optimised, just a splice of the current WebUI 5.0.2 (with translation strings removed) and the nightwalker styles**
